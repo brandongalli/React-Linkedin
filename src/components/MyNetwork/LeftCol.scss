@@ -1,0 +1,44 @@
+.left-col{
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    &.sticky{
+        position: fixed;
+        top: 80px;
+        width: 16.2%;
+    }
+    .my-community{
+        margin-bottom: 10px;
+        .collapsed{
+            max-height: 0px !important;
+            transition-duration: 167ms;
+            animation: fade-in 167ms cubic-bezier(.4,0,1,1);
+            overflow: hidden;
+        }
+        .expanded{
+            transition-duration: 167ms;
+            animation: fade-in 167ms cubic-bezier(.4,0,1,1);
+        }
+        .collapse-btn{
+            text-decoration: none;  
+            color: rgba(0,0,0,.6);            
+            padding: 8px 12px;
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            &:hover{
+                background-color: hsla(0,0%,81.2%,.25);
+                color: rgba(0,0,0,.6);
+                cursor: pointer;
+            }
+            &.hide{
+                display: none;
+            }
+        }
+    }
+    .advertise{
+        overflow: hidden;
+        img{
+            width: 101%;
+        }
+    }
+}
