@@ -23,7 +23,7 @@ export const Router = () => {
           <Route path="/messaging" component={MessagingPage} />
           <Route path='/notifications' component={NotificationsPage} />
         </Switch>
-        </Layout>
+      </Layout>
     </BrowserRouter>
   );
 };
